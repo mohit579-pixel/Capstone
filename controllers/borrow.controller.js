@@ -1,7 +1,7 @@
-const bookModel = require("../models/book");
+const bookModel = require("../models/Book");
 const borrowModel=require("../models/Borrow");
 const returnModel=require("../models/Return");
-const userModel=require("../models/user");
+const userModel=require("../models/User");
 module.exports.borrorbooks=async(req,res,next)=>{
     const {username,bookId,dueDate}=req.body;
 
