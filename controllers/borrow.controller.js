@@ -73,6 +73,6 @@ module.exports.updateBook = async (req, res, next) => {
         }
     } catch (error) {
        
-        res.status(500).json({ message: 'An error occurred', error: error.message });
+        res.status(500).json({ message: 'An error occurreds', error: error.message });
     }
 };
