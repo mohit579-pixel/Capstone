@@ -6,6 +6,7 @@ const dbUrl=process.env.dbURL
 const app=express();
 const userRoute=require('./routes/user.routes');
 const bookRoute=require('./routes/book.routes');
+const borrowRoute=require('./routes/borrow.routes');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
@@ -22,6 +23,7 @@ async function main(){
 
 app.use('/user',userRoute);
 app.use('/book',bookRoute);
+app.use('/borrow',borrowRoute);
 
 
 
